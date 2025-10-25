@@ -1,7 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/Header";
-import Hero from "./_components/Hero";
+import { Toaster } from "@/components/ui/sonner"
+import { toast } from "sonner"
+
 
 import { ClerkProvider } from '@clerk/nextjs';
 
@@ -29,6 +31,7 @@ export default function RootLayout({ children }) {
         >
           <Header/>
           {children}
+           <Toaster />
         </body>
       </html>
     </ClerkProvider>
