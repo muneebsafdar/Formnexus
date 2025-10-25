@@ -1,6 +1,6 @@
 
 import Hero from "./_components/Hero"
-import Header from "./_components/Header"
+import Howitworks from "@/app/_components/HowitWorks"
 
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
     <div>
       
       <Hero/>
+      <Howitworks/>
     </div>
   )
 }
